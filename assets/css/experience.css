@@ -93,6 +93,8 @@ section > div {
 
 .experience_head {
   font-weight: bold;
+  font-size: 5rem;
+  line-height: 1.18;
 }
 
 /*color of experience page headings*/

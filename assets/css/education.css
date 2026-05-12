@@ -34,6 +34,8 @@ html {
 
 .education_head {
   font-weight: bold;
+  font-size: 5rem;
+  line-height: 1.18;
 }
 
 /*color of education page heading*/
@@ -404,11 +406,6 @@ header p {
   float: right;
   padding: 40px 30px 10px 30px;
 }
- .timeline-item:nth-child(even) .timeline-content .alignment {
-  position:absolute;
-  text-align: left;
-  padding-right: 5px;
-} 
 .timeline-item:nth-child(even) .timeline-content .date {
   left: auto;
   right: 0;
@@ -447,8 +444,9 @@ header p {
   color: black; */
   box-shadow: 0 20px 25px 15px rgba(0, 0, 0, 0.3);
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden;
    background-image: linear-gradient(147deg, #545b62a8, black);
   color: white;
 }
@@ -516,9 +514,14 @@ header p {
 }
 
 .timeline-img-header {
+  width: 100%;
   height: 200px;
+  flex: 0 0 200px;
   position: relative;
   margin-bottom: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   /*background-image: url('assets/images/education-page/edTimeline1.png');*/
 
 }
@@ -548,9 +551,16 @@ blockquote {
   right: 0;
 }
 
-.alignment{
-  padding-left: 20px;
-  
+.timeline-copy {
+  padding: 0 20px 20px;
+}
+
+.timeline-copy-right {
+  text-align: right;
+}
+
+.timeline-copy-left {
+  text-align: left;
 }
 
     /* Media Query  header/footer */

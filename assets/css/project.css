@@ -31,6 +31,8 @@ body {
 
 .projects_head {
   font-weight: bold;
+  font-size: 4.5rem;
+  line-height: 1.18;
 }
 
 /*color of projects page heading*/
@@ -145,6 +147,22 @@ a:hover {
   cursor: pointer;
 }
 
+.projectcards {
+  justify-content: center;
+}
+
+.single-project-card {
+  max-width: 620px;
+}
+
+.project-card-link,
+.project-card-link:hover {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+  width: 100%;
+}
+
 .column {
   float: left;
   margin-bottom: 2rem;
@@ -229,6 +247,23 @@ a:hover {
   padding-bottom: 2rem;
   margin-top: 0em;
   font-size: 0.65em;
+}
+
+.project-card-description {
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 1rem;
+  line-height: 1.55;
+  margin: 0 0 1.25rem;
+}
+
+.project-card-action {
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.45rem 0.75rem;
 }
 
 @media (min-width: 411px) {
@@ -855,4 +890,86 @@ SVG ANIMATIONS PROJECT PAGE
   animation-iteration-count: infinite;
   animation-duration: 3.3s;
   transform-origin: 785.132px 295.833px;
+}
+
+.projectcards {
+  display: flex;
+  gap: 1.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1380px;
+}
+
+.single-project-card.skill-card {
+  flex: 1 1 100%;
+  margin: 0 !important;
+  max-width: none;
+  width: 100%;
+}
+
+.single-project-card .wrapper {
+  aspect-ratio: 1 / 1;
+  min-height: 24rem;
+}
+
+.single-project-card .data {
+  height: auto;
+  min-height: 0;
+  padding: 0;
+  transform: translateY(0) !important;
+}
+
+.single-project-card .data .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 1.5rem 2rem 1.6rem;
+}
+
+.single-project-card .title {
+  color: #fff;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  line-height: 1.18;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.single-project-card .title-div {
+  height: auto;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.single-project-card .project-card-description {
+  margin: 0;
+}
+
+.single-project-card .project-card-action {
+  align-self: flex-start;
+  margin-top: 0.35rem;
+}
+
+@media (min-width: 992px) {
+  .projectcards {
+    flex-wrap: nowrap;
+  }
+
+  .single-project-card.skill-card {
+    flex: 0 1 390px;
+    width: 390px;
+  }
+
+  .single-project-card .wrapper {
+    min-height: 0;
+  }
+
+  .single-project-card .title {
+    font-size: clamp(1.4rem, 2.1vw, 2.1rem);
+  }
+}
+
+@media (max-width: 991px) {
+  .projectcards {
+    flex-wrap: wrap;
+  }
 }

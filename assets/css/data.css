@@ -1,0 +1,253 @@
+body[light-mode="dark"] {
+  background-color: #141516;
+  color: #e8eaf0;
+}
+
+.data-page {
+  min-height: 100vh;
+  padding: 8rem 1.5rem 4rem;
+}
+
+.data-hero,
+.data-intro,
+.data-section {
+  margin: 0 auto;
+  max-width: 1120px;
+}
+
+.data-hero {
+  border-bottom: 1px solid rgba(187, 134, 252, 0.26);
+  padding-bottom: 2.5rem;
+}
+
+.data-kicker {
+  color: #bb86fc;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.data-hero h1 {
+  color: #fff;
+  font-size: clamp(2.4rem, 5vw, 4.4rem);
+  font-weight: 700;
+  line-height: 1.06;
+  margin: 0 0 1.2rem;
+  max-width: 860px;
+}
+
+.data-notice {
+  background: rgba(187, 134, 252, 0.12);
+  border-left: 4px solid #bb86fc;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin: 1.5rem 0 0;
+  max-width: 880px;
+  padding: 1rem 1.2rem;
+}
+
+.data-intro {
+  padding: 3rem 0 2rem;
+}
+
+.data-intro p,
+.data-footnote p {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1.08rem;
+  line-height: 1.85;
+  margin: 0 0 1.35rem;
+  text-align: justify;
+}
+
+.data-intro code,
+.data-footnote code {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  color: #fff;
+  padding: 0.12rem 0.35rem;
+}
+
+.data-section {
+  padding: 2.2rem 0;
+}
+
+.data-section-header {
+  align-items: end;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.data-section h2 {
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  margin: 0;
+}
+
+.data-section-header span {
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 0.95rem;
+}
+
+.data-table-wrap {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.data-table {
+  color: #e8eaf0;
+  margin: 0;
+  table-layout: fixed;
+}
+
+.data-table thead th {
+  background: rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 1.08rem;
+  font-weight: 700;
+  padding: 1.05rem 0.8rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.data-table thead th:first-child {
+  border-left: 0;
+}
+
+.data-table td {
+  background: rgba(255, 255, 255, 0.025);
+  border-color: rgba(255, 255, 255, 0.08);
+  font-size: 1.02rem;
+  padding: 1rem 0.8rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.data-table tbody tr:hover td {
+  background: rgba(187, 134, 252, 0.1);
+}
+
+.data-table a {
+  color: #8fb8ff;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.data-table a:hover {
+  color: #bb86fc;
+  text-decoration: underline;
+}
+
+.data-pending {
+  color: rgba(255, 255, 255, 0.38);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.data-footnote {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.data-footnote h2 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+html[light-mode="light"] .data-page {
+  background-color: #f6f6f6;
+  color: #252a32;
+}
+
+html[light-mode="light"] .data-hero {
+  border-bottom-color: rgba(78, 0, 187, 0.16);
+}
+
+html[light-mode="light"] .data-hero h1,
+html[light-mode="light"] .data-section h2,
+html[light-mode="light"] .data-table thead th {
+  color: #252a32;
+}
+
+html[light-mode="light"] .data-notice {
+  background: rgba(187, 134, 252, 0.16);
+  color: rgba(37, 42, 50, 0.78);
+}
+
+html[light-mode="light"] .data-intro p,
+html[light-mode="light"] .data-footnote p,
+html[light-mode="light"] .data-section-header span {
+  color: rgba(37, 42, 50, 0.72);
+}
+
+html[light-mode="light"] .data-intro code,
+html[light-mode="light"] .data-footnote code {
+  background: rgba(78, 0, 187, 0.08);
+  color: #252a32;
+}
+
+html[light-mode="light"] .data-table-wrap {
+  background: #fff;
+  border-color: rgba(25, 25, 25, 0.08);
+  box-shadow: 0 12px 32px rgba(25, 25, 25, 0.06);
+}
+
+html[light-mode="light"] .data-table {
+  color: #252a32;
+}
+
+html[light-mode="light"] .data-table thead th {
+  background: rgba(187, 134, 252, 0.16);
+  border-bottom-color: rgba(25, 25, 25, 0.1);
+  border-left-color: rgba(25, 25, 25, 0.08);
+}
+
+html[light-mode="light"] .data-table td {
+  background: #fff;
+  border-color: rgba(25, 25, 25, 0.08);
+}
+
+html[light-mode="light"] .data-table tbody tr:hover td {
+  background: rgba(187, 134, 252, 0.12);
+}
+
+html[light-mode="light"] .data-table a {
+  color: #4e00bb;
+}
+
+html[light-mode="light"] .data-pending {
+  color: rgba(37, 42, 50, 0.42);
+}
+
+html[light-mode="light"] .data-footnote {
+  border-top-color: rgba(25, 25, 25, 0.1);
+}
+
+@media (max-width: 760px) {
+  .data-page {
+    padding: 6.5rem 1rem 3rem;
+  }
+
+  .data-section-header {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .data-table {
+    min-width: 780px;
+  }
+
+  .data-intro p,
+  .data-footnote p {
+    text-align: left;
+  }
+}

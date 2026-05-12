@@ -109,6 +109,9 @@ function showExperience() {
 }
 
 const showCards = () => {
+  if (!moocs) {
+    return;
+  }
   let output = "";
   moocscards.forEach(
     ({ title, cardImage, moocLink }) =>
