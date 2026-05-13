@@ -973,3 +973,59 @@ SVG ANIMATIONS PROJECT PAGE
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 767px) {
+  .project-box {
+    margin-top: 2rem !important;
+    padding: 1rem !important;
+  }
+
+  .projectcards {
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+
+  .single-project-card.skill-card {
+    flex: 0 1 auto;
+    max-width: 430px;
+    width: 100%;
+  }
+
+  .single-project-card .wrapper {
+    aspect-ratio: auto;
+    background-position: center top !important;
+    background-size: contain !important;
+    min-height: 0;
+    padding-top: clamp(220px, 62vw, 320px);
+  }
+
+  .single-project-card .data {
+    background: rgba(28, 29, 31, 0.82);
+    position: static;
+  }
+
+  .single-project-card .data .content {
+    gap: 0.45rem;
+    padding: 1rem 1.15rem 1.15rem;
+  }
+
+  .single-project-card .title {
+    font-size: 1.75rem;
+    line-height: 1.15;
+  }
+
+  .single-project-card .project-card-description {
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+
+  .single-project-card .project-card-action {
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+    padding: 0.5rem 0.85rem;
+  }
+}
